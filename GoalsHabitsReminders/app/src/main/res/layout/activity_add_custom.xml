@@ -6,15 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="mitchbryant.goalshabitsreminders.AddActivity">
+    tools:context="mitchbryant.goalshabitsreminders.CustomActivity">
 
 
-    <ListView
-        android:id="@+id/habitlist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-         />
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
@@ -26,6 +20,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
+
+    <EditText
+        android:id="@+id/customGoalName"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name of Goal"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>
 

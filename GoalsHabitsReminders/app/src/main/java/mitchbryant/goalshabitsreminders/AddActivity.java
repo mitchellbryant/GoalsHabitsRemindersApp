@@ -53,7 +53,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout_add);
-        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        overridePendingTransition(R.anim.up_in, R.anim.up_out);
 
         habitTypeChoose = findViewById(R.id.habitlist);
         List list = new ArrayList();
@@ -81,6 +81,17 @@ public class AddActivity extends AppCompatActivity {
             }
         };
         habitTypeChoose.setAdapter(courseAdapter);
+        habitTypeChoose.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) {
+                    Intent intent = new Intent(AddActivity.this, CustomActivity.class);
+                    startActivity(intent);
+                }
+            }
+
+
+        });
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
