@@ -25,11 +25,381 @@
         android:id="@+id/customGoalName"
         android:layout_width="365dp"
         android:layout_height="55dp"
+        android:contentDescription="Name of Goal"
         android:ems="10"
+        android:hint="Name of Goal"
         android:inputType="textPersonName"
-        android:text="Name of Goal"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonDaily"
+        android:layout_width="110dp"
+        android:layout_height="56dp"
+        android:text="ToggleButton"
+        android:textOff="Daily"
+        android:textOn="Daily"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonWeekly"
+        android:layout_width="110dp"
+        android:layout_height="59dp"
+        android:text="ToggleButton"
+        android:textOff="Weekly"
+        android:textOn="Weekly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonMonthly"
+        android:layout_width="110dp"
+        android:layout_height="59dp"
+        android:text="ToggleButton"
+        android:textOff="Monthly"
+        android:textOn="Monthly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose how often to repeat"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButtonWeekly"
+        app:layout_constraintEnd_toStartOf="@+id/customGoalName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/customGoalName"
+        app:layout_constraintTop_toBottomOf="@+id/customGoalName" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutDaily"
+        android:layout_width="368dp"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Choose which days"
+            android:text="Choose which days"
+            app:layout_constraintBottom_toTopOf="@+id/toggleButtonThursday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Choose which days" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSunday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="S"
+            android:textOn="S"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonMonday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonMonday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="M"
+            android:textOn="M"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonTuesday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonSunday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonTuesday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="T"
+            android:textOn="T"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonWednesday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonMonday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonWednesday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="W"
+            android:textOn="W"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonThursday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonTuesday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonThursday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="T"
+            android:textOn="T"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonFriday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonWednesday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonFriday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="F"
+            android:textOn="F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonSaturday"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonThursday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSaturday"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:text="ToggleButton"
+            android:textOff="S"
+            android:textOn="S"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonFriday"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutWeekly"
+        android:layout_width="368dp"
+        android:layout_height="290dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665">
+
+        <ToggleButton
+            android:id="@+id/toggleButton1Day"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="1"
+            android:textOff="1"
+            android:textOn="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton2Days"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2Days"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="2"
+            android:textOff="2"
+            android:textOn="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton3Days"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton1Day"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3Days"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="3"
+            android:textOff="3"
+            android:textOn="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton4Days"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton2Days"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4Days"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="4"
+            android:textOff="4"
+            android:textOn="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton5Days"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton3Days"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5Days"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="5"
+            android:textOff="5"
+            android:textOn="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton6Days"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton4Days"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6Days"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:text="6"
+            android:textOff="6"
+            android:textOn="6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton5Days"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWhichDays"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewWhichDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose how many days"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutMonthly"
+        android:layout_width="368dp"
+        android:layout_height="290dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonMonthBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="First Of"
+            android:textOn="First Of"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonMonthMiddle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonMonthMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="Middle Of"
+            android:textOn="Middle Of"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonMonthEnd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonMonthBegin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonMonthEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="End Of"
+            android:textOn="End Of"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonMonthEntire"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonMonthMiddle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonMonthEntire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOff="Entire"
+            android:textOn="Entire"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonMonthEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose what time of month to remind you"
+            app:layout_constraintBottom_toTopOf="@+id/toggleButtonMonthMiddle"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButtonMonthEnd"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toEndOf="@+id/toggleButtonMonthMiddle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
 
