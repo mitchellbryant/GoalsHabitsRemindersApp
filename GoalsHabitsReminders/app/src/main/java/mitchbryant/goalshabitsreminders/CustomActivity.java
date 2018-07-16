@@ -20,29 +20,9 @@ import java.util.List;
 
 public class CustomActivity extends AppCompatActivity {
 
-    private ToggleButton dailyButton;
-    private ToggleButton weeklyButton;
-    private ToggleButton monthlyButton;
-    private ToggleButton sunday;
-    private ToggleButton monday;
-    private ToggleButton tuesday;
-    private ToggleButton wednesday;
-    private ToggleButton thursday;
-    private ToggleButton friday;
-    private ToggleButton saturday;
-    private ToggleButton one;
-    private ToggleButton two;
-    private ToggleButton three;
-    private ToggleButton four;
-    private ToggleButton five;
-    private ToggleButton six;
-    private ToggleButton begin;
-    private ToggleButton middle;
-    private ToggleButton end;
-    private ToggleButton entire;
-    private View daily;
-    private View weekly;
-    private View monthly;
+    private ToggleButton dailyButton, weeklyButton, monthlyButton;
+    private ToggleButton sunday, monday, tuesday, wednesday, thursday, friday, saturday, one, two, three, four, five, six, begin, middle, end, entire, morning, afternoon, evening, anytime;
+    private View daily, weekly, monthly;
 
 
     @Override
@@ -79,6 +59,10 @@ public class CustomActivity extends AppCompatActivity {
         middle = findViewById(R.id.toggleButtonMonthMiddle);
         end = findViewById(R.id.toggleButtonMonthEnd);
         entire = findViewById(R.id.toggleButtonMonthEntire);
+        morning = findViewById(R.id.toggleButtonMorning);
+        afternoon = findViewById(R.id.toggleButtonAfternoon);
+        evening = findViewById(R.id.toggleButtonEvening);
+        anytime = findViewById(R.id.toggleButtonAnytime);
 
         dailyButton.setChecked(true);
         dailyButton.setOnClickListener(new View.OnClickListener() {
@@ -189,6 +173,102 @@ public class CustomActivity extends AppCompatActivity {
                 }
                 if(!six.isChecked()){
                     six.setChecked(true);
+                }
+            }
+        });
+        begin.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] monthly = {middle, end, entire};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<monthly.length; i++){
+                    monthly[i].setChecked(false);
+                }
+                if(!begin.isChecked()){
+                    begin.setChecked(true);
+                }
+            }
+        });
+        middle.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] monthly = {begin, end, entire};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<monthly.length; i++){
+                    monthly[i].setChecked(false);
+                }
+                if(!middle.isChecked()){
+                    middle.setChecked(true);
+                }
+            }
+        });
+        end.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] monthly = {begin, middle, entire};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<monthly.length; i++){
+                    monthly[i].setChecked(false);
+                }
+                if(!end.isChecked()){
+                    end.setChecked(true);
+                }
+            }
+        });
+        entire.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] monthly = {begin, middle, end};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<monthly.length; i++){
+                    monthly[i].setChecked(false);
+                }
+                if(!entire.isChecked()){
+                    entire.setChecked(true);
+                }
+            }
+        });
+        morning.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] whattime = {afternoon, evening, anytime};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<whattime.length; i++){
+                    whattime[i].setChecked(false);
+                }
+                if(!morning.isChecked()){
+                    morning.setChecked(true);
+                }
+            }
+        });
+        afternoon.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] whattime = {morning, evening, anytime};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<whattime.length; i++){
+                    whattime[i].setChecked(false);
+                }
+                if(!afternoon.isChecked()){
+                    afternoon.setChecked(true);
+                }
+            }
+        });
+        evening.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] whattime = {morning, afternoon, anytime};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<whattime.length; i++){
+                    whattime[i].setChecked(false);
+                }
+                if(!evening.isChecked()){
+                    evening.setChecked(true);
+                }
+            }
+        });
+        anytime.setOnClickListener(new View.OnClickListener() {
+            private ToggleButton[] whattime = {afternoon, evening, morning};
+            @Override
+            public void onClick(View view) {
+                for (int i=0; i<whattime.length; i++){
+                    whattime[i].setChecked(false);
+                }
+                if(!anytime.isChecked()){
+                    anytime.setChecked(true);
                 }
             }
         });

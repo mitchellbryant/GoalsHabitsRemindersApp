@@ -53,7 +53,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout_add);
-        overridePendingTransition(R.anim.up_in, R.anim.up_out);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
         habitTypeChoose = findViewById(R.id.habitlist);
         List list = new ArrayList();

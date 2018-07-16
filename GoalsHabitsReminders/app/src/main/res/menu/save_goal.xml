@@ -3,6 +3,11 @@
     >
 
     <item
+        android:id="@+id/backGoal"
+        android:title="back"
+        app:showAsAction="always"
+        android:layout_alignParentLeft="true"/>
+    <item
         android:id="@+id/saveGoal"
         android:title="SAVE"
         app:showAsAction="always" />
