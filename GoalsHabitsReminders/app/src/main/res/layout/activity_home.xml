@@ -12,7 +12,8 @@
         android:id="@+id/habitList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:divider="#000000"
+        android:dividerHeight="10px"
         />
 
 </android.support.constraint.ConstraintLayout>

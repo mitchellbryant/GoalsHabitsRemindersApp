@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -61,6 +62,17 @@ public class HomeActivity extends AppCompatActivity {
             }
         };
         habits.setAdapter(habitsAdapter);
+        habits.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) {
+                    Intent intent = new Intent(HomeActivity.this, ListViewActivity.class);
+                    startActivity(intent);
+                }
+            }
+
+
+        });
 
 
     }

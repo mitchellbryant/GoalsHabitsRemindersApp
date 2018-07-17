@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b13c829-1733-4410-990d-e60bfbb47212" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/misc.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/modules.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/.idea/misc.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/AddActivity.java" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/AddActivity.java" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/CustomActivity.java" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/CustomActivity.java" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/HomeActivity.java" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/HomeActivity.java" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/abs_layout_add.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/abs_layout_add.xml" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/abs_layout_add_custom.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/abs_layout_add_custom.xml" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_add_custom.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_add_custom.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_add.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_add.xml" />
       <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/layout/activity_home.xml" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/menu/save_goal.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/menu/save_goal.xml" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/build.gradle" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/app/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/values/dimens.xml" />
+      <change beforePath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,9 +21,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Habit.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Habit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/Habit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/AddActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -45,11 +52,11 @@
       <projects_view />
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2283" />
-    <option name="y" value="86" />
-    <option name="width" value="1400" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -67,9 +74,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,11 +85,6 @@
             <path>
               <item name="GoalsHabitsRemindersApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoalsHabitsRemindersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoalsHabitsRemindersApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoalsHabitsRemindersApp" type="462c0819:PsiDirectoryNode" />
               <item name="GoalsHabitsReminders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -115,7 +115,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoalsHabitsRemindersApp" type="b2602c69:ProjectViewProjectNode" />
@@ -124,8 +124,8 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mitchbryant" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoalsHabitsRemindersApp" type="b2602c69:ProjectViewProjectNode" />
@@ -134,14 +134,15 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mitchbryant" type="462c0819:PsiDirectoryNode" />
-              <item name="goalshabitsreminders" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="mipmap-xhdpi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,7 +262,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2283" y="86" width="1400" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -269,12 +270,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17913593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -298,6 +300,35 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/Habit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/Habit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/mipmap-xhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/res/drawable/ic_launcher_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoalsHabitsReminders/app/src/main/java/mitchbryant/goalshabitsreminders/AddActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
